@@ -36,7 +36,7 @@ Server.default = t
 
 //bgola says: if you don't set the server default, you need to specify the server you want the synth to play.
 
-//for example ().play will user Server.default unless you say (server:t).play
+//for example ().play will use Server.default unless you say (server:t).play
 
 )
 
@@ -48,3 +48,7 @@ e.free;
 
 ().play;
 
+
+Ndef(\sine, {SinOsc.ar([234,345],0,0.1)})
+Ndef(\sine).play;
+Ndef(\sine).stop;
