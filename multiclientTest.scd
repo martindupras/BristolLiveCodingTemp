@@ -1,6 +1,10 @@
 // multiclientTest.scd  hemiketal/bgola
 // with much help from hemiketal and bgola on Discord/Supercollider
 
+// 20250630:14:58 I have just run this code with Server on my macbook pro, and the client on windows laptop and it worked. It was fragile though and it took a few goes so document the actual order of things and start afresh every time to leave less to go wrong.
+
+// 20250630:16:00 I have run this with two macs and everything works. Windows is a bastard.
+
 /*
     Run this on SERVER machine;  eventually find if we can narrow a bit from 0.0.0.0
 */
@@ -49,6 +53,7 @@ e.free;
 ().play;
 
 
+
 Ndef(\sine, {SinOsc.ar([234,345],0,0.1)})
 Ndef(\sine).play;
 Ndef(\sine).stop;
@@ -56,6 +61,9 @@ Ndef(\sine).stop;
 
 
 
+
+
+// NOT NEEDED: this was just a slightly different version to test things.
 (
 o = ServerOptions.new;
 o.maxLogins = 8;
