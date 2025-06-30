@@ -52,3 +52,24 @@ e.free;
 Ndef(\sine, {SinOsc.ar([234,345],0,0.1)})
 Ndef(\sine).play;
 Ndef(\sine).stop;
+
+
+
+
+(
+o = ServerOptions.new;
+o.maxLogins = 8;
+o.protocol_(\tcp);
+s = Server.remote(\remoteEss, NetAddr("192.168.178.189", 57110), o); // set to correct address and port
+s.addr.connect;
+s.startAliveThread( 0 );
+s.doWhenBooted({ "remote tcp server started".postln; s.notify; s.initTree });
+
+// this bit was critical:
+Server.default = s
+
+//bgola says: if you don't set the server default, you need to specify the server you want the synth to play.
+
+//for example ().play will use Server.default unless you say (server:t).play
+
+)
