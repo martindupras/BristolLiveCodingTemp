@@ -3,7 +3,7 @@
 #Questions?
 
 ### Martin asks: 
-Ndefs are cool; how do we make an Ndef that will take a SynthDef and maker it play from a Pbind? (Not finding clear examples, and also there's a name clash between 'gate' in Ndef and in SynthDef (something like that anyway; I'll check it out.)
+Ndefs are cool; how do we make an Ndef that will take a SynthDef and make it play from a Pbind? It's not obvious because a SynthDef would normally have an Out.ar() of somesort; whereas an Ndef normally should not. (Not finding clear examples, and also there's a name clash between 'gate' in Ndef and in SynthDef (something like that anyway; I'll check it out.)
 
 
 ### Martin asks: 
