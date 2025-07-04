@@ -1,5 +1,6 @@
 ## Notes To Selves
 
+
 #Multi-client:
 We successfully connected one SC Client to a remote server using the BootMyServerToOtherClients.scd
 
@@ -30,3 +31,9 @@ From the docs: *"scsynth will automatically give a different clientID to each cl
 */ ------------------
 Server.default.options.safetyClipThreshold = 1
 ```
+
+# Possibly Useful Note on SynthDef Timing:
+
+Nathan Ho has a really interesting tips entitled *Always wrap Synth.new and Synth:set in Server.default.bind* on this page: [https://nathan.ho.name/posts/supercollider-tips/](https://nathan.ho.name/posts/supercollider-tips/)
+
+From what I understand from first reading, this changes the OSC messages sent to the server to schedule OSC messages in a more precise using a \latency key. Or something. Investigat further.
