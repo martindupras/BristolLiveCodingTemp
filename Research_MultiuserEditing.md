@@ -19,6 +19,15 @@ Error loading Python lib
 *Maybe Guy can figure it out, seems far more experienced with Pythong than I am.*
 
 
+### scnvim + tmux + instant.nvim
+
+According to this [thread](https://scsynth.org/t/sc-in-the-browser/7995/4) on scsynth.org:
+
+*using terminal with scnvim + tmux + instant.nvim GitHub - jbyuki/instant.nvim: collaborative editing in Neovim using built-in capabilities*
+
+[GitHub link to instant.nvim](https://github.com/jbyuki/instant.nvim)
+
+
 ### Etherpad
 
 Browser-based, open-source, cross-platform, servable on local network.
