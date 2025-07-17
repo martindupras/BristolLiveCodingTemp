@@ -1,0 +1,20 @@
+TO DO TODAY
+
+
+[√ 3 done] make at least 2 or 3 sound generators (to be able to swap)
+[] make at least two Ndefs that can take those (with slots)
+[] make at least 3 or 4 processors;  obvious and stackable (chopper, long reverb, resonator, hpss?)
+[] make Ndef slots for those
+
+[] play a bit with live coding those; make notes about HOW to do this coherently
+
+[] apply Pdefs to the generators; see MDNdefPbind
+
+[] apply Pdefs to the processors; e.g. rate of chopper, size of reverb
+
+THEN this afternoon:
+[] keep going with SH exercises. See if I can make a dummy tree of commands that just (stupidly) calls up those SynthDefs in those Ndefs.
+
+
+MORE:
+[] Wouldn't it be really good to have a really easy way to add faders to control values? Maybe I can make a PD patch with abstractions for OSC sending faders, toggles, and buttons? Possibly simplest for me at this stage, but plan an SC way.
